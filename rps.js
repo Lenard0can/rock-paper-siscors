@@ -1,5 +1,8 @@
 function getComputerChoice(){
-    return "rock";
+    let randomNumber = Math.floor(Math.random() * 3);
+    let computerChoices = ["Rock", "Paper", "Scissors"]; 
+    return computerChoices[randomNumber];
 }
 
-console.log(getComputerChoice())
+let computerChoice = getComputerChoice();
+console.log(computerChoice);
